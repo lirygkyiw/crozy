@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Crozy bot</title>
+        <link rel="icon" type="image/png" href="logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+    <style> 
+    body {
+        color: #fff;
+        background-image: url('background.jpg');
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .button-31 {
+  background-color: #222;
+  border-radius: 10px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 9px 9px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 9%;
+}
+
+.button-31:hover,
+.button-31:focus {
+  opacity: .75;
+}
+   
+    </style>
+</script>
+
+    </head>
+    <body>
+    <center><img src="logo.png" alt="logo" width="150" height="150"></center>
+        <center><h1>Crozy</h1></center>
+        <center><p>
+            Crozy is de discord bot die naar je luistert.
+            <br>
+            Als je ondersteuning nodig hebt, kun je lid worden van de discord server.
+            <br>
+            Wij zijn er om u altijd te helpen.
+            <br>
+            Typ /help in Discord om hulp te krijgen met crozy!
+        </p></center>
+
+        <center><button class="button-31" onclick=" window.open('https://discord.com/api/oauth2/authorize?client_id=1031239201917771786&permissions=8&scope=bot','_blank')">Invite</button> <button class="button-31" role="button">Dashboard</button> <button class="button-31" id="button" role="button">Commands</button> <button class="button-31" onclick=" window.open('https://discord.gg/AAXfV2Becy','_blank')">Support</button></center>
+        
+    </body>
+
+
+
+    <html>
+<head>
+  <style>
+	#overlay {
+		display: none;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		background: #999;
+		opacity: 0.8;
+		z-index: 100;
+	}
+
+	#popup {
+		display: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		background: rgb(0, 0, 0);
+		width: 500px;
+		height: 500px;
+		margin-left: -250px; 
+		margin-top: -250px; 
+		z-index: 200;
+	}
+
+	#popupclose {
+		float: right;
+		padding: 10px;
+		cursor: pointer;
+	}
+
+	.popupcontent {
+		padding: 10px;
+	}
+
+	#button {
+		cursor: pointer;
+	}
+  </style>
+</head>
+<body>
+<div id="maincontent">
+</div>
+<div id="overlay"></div>
+<div id="popup">
+    <div class="popupcontrols">
+        <span id="popupclose">X</span>
+    </div>
+    <div class="popupcontent">
+        <h1>Bot commands</h1>
+          <h4>/warn – je kan iemand een warn.</h4>
+          <h4>/unwarn - je haalt zijn/haar warn weg .</h4>
+          <h4>/mute – je geeft hem/haar een time-out.</h4>
+          <h4>/kick – je kickt iemand van de server.</h4>
+          <h4>/ban – je banned iemand van de server.</h4>
+          <h4>/help – je krijg een link van de site.</h4>
+          <h4>/dashboard - je gaat naar het dashboard.</h4>
+          <h4>/invite – je invite de bot naar een server.</h4>
+    </div>
+</div>
+<script type="text/javascript">
+	var closePopup = document.getElementById("popupclose");
+	var overlay = document.getElementById("overlay");
+	var popup = document.getElementById("popup");
+	var button = document.getElementById("button");
+
+	closePopup.onclick = function() {
+	  overlay.style.display = 'none';
+	  popup.style.display = 'none';
+	};
+	button.onclick = function() {
+	  overlay.style.display = 'block';
+	  popup.style.display = 'block';
+	}
+</script>
+</body>
+</html>
